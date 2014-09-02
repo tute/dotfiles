@@ -1,16 +1,44 @@
-color github  " brighter
-color default " darker
-
 set relativenumber
+
+color default
+
+" when using darker backgrounds it chooses a friendly palette
+set background=dark
+
+" keep 3 lines when scrolling
+set scrolloff=3
 
 " Highlight search terms
 set hlsearch
 
+" Highlight long lines
+set textwidth=80
+set colorcolumn=+1
+
+" Pastetoggle for pasting without leaving insert mode.
+set pastetoggle=<f5>
+
+" Turn off spell by default. Too much technical jargon.
+set nospell
+
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
+
+" NERDTree
+nmap <leader>n :NERDTreeToggle<CR>
+let NERDTreeHighlightCursorline=1
+let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 " Remove trailing white space on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-let g:rspec_command = "Dispatch rspec {spec}"
+let g:rspec_command = "Dispatch spring rspec {spec}"
+
+let g:vim_markdown_folding_disabled=1
 
 au BufReadPost *.hbs set syntax=mustache
+
+" vim-cdo
+set hidden

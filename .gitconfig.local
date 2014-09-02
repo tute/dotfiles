@@ -1,12 +1,13 @@
 [alias]
   br = branch
+  ca = commit -a --amend
   changelog = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --abbrev-commit --graph
   df = diff
   lg = log -p
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
   st = status -s
-  wip = !git add -A && git commit -m "wip"
+  wip = !git commit -am wip
 [apply]
   whitespace = fix
 [core]

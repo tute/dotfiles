@@ -3,11 +3,13 @@ alias ding='afplay /System/Library/Sounds/Glass.aiff'
 alias gitx='gitx --all .'
 alias grbc='git rebase --continue'
 alias grep='grep --color --exclude="*/coverage/*"'
+alias mvim='vim'
 alias rst='touch tmp/restart.txt'
 
 alias dk='cd ~/Sites/opensource/doorkeeper-gem/doorkeeper'
 alias merit='cd ~/Sites/opensource/merit'
 alias rr='cd ~/Sites/opensource/rails'
+alias talk='cd ~/Sites/opensource/refactoring-workshop'
 
 # rbenv
 export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH
