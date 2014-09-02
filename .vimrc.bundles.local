@@ -1,0 +1,3 @@
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-dispatch'

@@ -1,0 +1,17 @@
+alias be='bundle exec'
+alias ding='afplay /System/Library/Sounds/Glass.aiff'
+alias gitx='gitx --all .'
+alias grbc='git rebase --continue'
+alias grep='grep --color --exclude="*/coverage/*"'
+alias rst='touch tmp/restart.txt'
+
+alias dk='cd ~/Sites/opensource/doorkeeper-gem/doorkeeper'
+alias merit='cd ~/Sites/opensource/merit'
+alias rr='cd ~/Sites/opensource/rails'
+
+# rbenv
+export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+
+### Added by the Heroku Toolbelt
+export PATH="./bin:/usr/local/heroku/bin:$PATH"

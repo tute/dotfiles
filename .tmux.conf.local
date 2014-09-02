@@ -1,0 +1,18 @@
+# Setup 'v' to begin selection as in Vim
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+
+# Update default binding of `Enter` to also use copy-pipe
+unbind -t vi-copy Enter
+bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
+
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# Easy resize of panes
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+
+# Easy reload of tmux files from within tmux session
+bind r source-file ~/.tmux.conf.local\; display "Reloaded!"

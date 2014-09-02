@@ -1,0 +1,18 @@
+[alias]
+  br = branch
+  changelog = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --abbrev-commit --graph
+  df = diff
+  lg = log -p
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  st = status -s
+  wip = !git add -A && git commit -m "wip"
+[apply]
+  whitespace = fix
+[core]
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[pull]
+  rebase = true
+[user]
+  name = Tute Costa
+  email = tutecosta@gmail.com

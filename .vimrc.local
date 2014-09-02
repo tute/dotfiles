@@ -1,0 +1,16 @@
+color github  " brighter
+color default " darker
+
+set relativenumber
+
+" Highlight search terms
+set hlsearch
+
+" Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" Remove trailing white space on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+let g:rspec_command = "Dispatch rspec {spec}"
+
+au BufReadPost *.hbs set syntax=mustache
