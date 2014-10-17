@@ -12,6 +12,8 @@
   whitespace = fix
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[help]
+  autocorrect = 1
 [pull]
   rebase = true
 [user]
