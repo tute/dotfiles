@@ -10,6 +10,8 @@
   wip = !git commit -am wip
 [apply]
   whitespace = fix
+[commit]
+  gpgsign = true
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [help]
@@ -19,3 +21,4 @@
 [user]
   name = Tute Costa
   email = tutecosta@gmail.com
+  signingkey = "Tute Costa <tutecosta@gmail.com>"

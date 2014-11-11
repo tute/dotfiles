@@ -1,6 +1,7 @@
 alias be='bundle exec'
 alias ding='afplay /System/Library/Sounds/Glass.aiff'
 alias gitx='gitx --all .'
+alias gpg='gpg2'
 alias grbc='git rebase --continue'
 alias grep='grep --color --exclude="*/coverage/*"'
 alias rdm='rake db:migrate'
@@ -11,8 +12,7 @@ alias merit='cd ~/Sites/opensource/merit'
 alias rr='cd ~/Sites/opensource/rails'
 alias talk='cd ~/Sites/opensource/refactoring-workshop'
 
-# rbenv
-export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH
+export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:$HOME/Library/Haskell/bin:$PATH
 eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
