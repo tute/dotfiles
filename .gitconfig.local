@@ -1,6 +1,6 @@
 [alias]
   br = branch
-  ca = commit -a --amend
+  ca = commit -a
   changelog = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --abbrev-commit --graph
   df = diff
   lg = log -p
@@ -10,8 +10,8 @@
   wip = !git commit -am wip
 [apply]
   whitespace = fix
-[commit]
-  gpgsign = true
+# [commit]
+#   gpgsign = true
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [help]
@@ -21,4 +21,5 @@
 [user]
   name = Tute Costa
   email = tutecosta@gmail.com
-  signingkey = "Tute Costa <tutecosta@gmail.com>"
+[heroku]
+  account = work

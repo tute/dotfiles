@@ -15,5 +15,8 @@ alias talk='cd ~/Sites/opensource/refactoring-workshop'
 export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:$HOME/Library/Haskell/bin:$PATH
 eval "$(rbenv init -)"
 
+GPG_TTY=$(tty)
+export GPG_TTY
+
 ### Added by the Heroku Toolbelt
 export PATH="./bin:/usr/local/heroku/bin:$PATH"
