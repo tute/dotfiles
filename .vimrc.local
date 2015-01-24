@@ -24,13 +24,6 @@ set nospell
 let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop<CR>
 
-" NERDTree
-nmap <leader>n :NERDTreeToggle<CR>
-let NERDTreeHighlightCursorline=1
-let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
-" Close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
 " Remove trailing white space on save
 autocmd BufWritePre * :%s/\s\+$//e
 
