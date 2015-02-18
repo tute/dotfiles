@@ -7,7 +7,10 @@ alias gold='git branch -a | grep origin | grep -v HEAD | xargs -n 1 git log --da
 alias grep='grep --color --exclude="*/coverage/*"'
 alias rdm='rake db:migrate'
 alias rst='touch tmp/restart.txt'
+alias ta='tmux attach -t'
+alias tl='tmux ls'
 
+alias hs='cd ~/Sites/others/hoy-soy'
 alias dk='cd ~/Sites/opensource/doorkeeper-gem/doorkeeper'
 alias merit='cd ~/Sites/opensource/merit'
 alias rr='cd ~/Sites/opensource/rails'

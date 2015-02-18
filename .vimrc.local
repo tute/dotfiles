@@ -1,10 +1,5 @@
 set relativenumber
 
-color default
-
-" when using darker backgrounds it chooses a friendly palette
-set background=dark
-
 " keep 3 lines when scrolling
 set scrolloff=3
 
@@ -27,7 +22,9 @@ nmap <Leader>r :RuboCop<CR>
 " Remove trailing white space on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-let g:rspec_command = "Dispatch spring rspec {spec}"
+" With spring:
+" let g:rspec_command = "Dispatch spring rspec {spec}"
+let g:rspec_command = "Dispatch rspec {spec}"
 
 let g:vim_markdown_folding_disabled=1
 
@@ -48,3 +45,5 @@ set ttymouse=xterm2
 
 " https://github.com/reedes/vim-textobj-quote
 autocmd FileType markdown call textobj#quote#init()
+
+nmap <Leader>x :make<CR><CR>
