@@ -1,3 +1,4 @@
+cp ~/.aliases.local .
 cp ~/.gitconfig.local .
 cp ~/.tmux.conf.local .
 cp ~/.vimrc.bundles.local .
