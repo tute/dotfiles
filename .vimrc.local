@@ -3,7 +3,7 @@ set relativenumber
 color default
 
 " keep 3 lines when scrolling
-set scrolloff=3
+set scrolloff=2
 
 " Highlight search terms
 set hlsearch
@@ -11,6 +11,9 @@ set hlsearch
 " Highlight long lines
 set textwidth=80
 set colorcolumn=+1
+
+" Resize splits when the window is resized
+au VimResized * exe "normal! \<c-w>="
 
 " Pastetoggle for pasting without leaving insert mode.
 set pastetoggle=<f5>

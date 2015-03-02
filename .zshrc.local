@@ -5,3 +5,9 @@ GPG_TTY=$(tty)
 export GPG_TTY
 
 export PATH="./bin:/usr/local/heroku/bin:$PATH"
+
+# Node
+ulimit -n 4096
+
+export NVM_DIR="/Users/tute/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
