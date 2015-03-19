@@ -8,6 +8,9 @@ set scrolloff=2
 " Highlight search terms
 set hlsearch
 
+" Autocomplete with dictionary words when spell check is on
+set complete+=kspell
+
 " Highlight long lines
 set textwidth=80
 set colorcolumn=+1
