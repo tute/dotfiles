@@ -6,7 +6,7 @@
   lg = log -p
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
-  st = status -s
+  st = status --short
   wip = !git commit -am wip
 [apply]
   whitespace = fix
