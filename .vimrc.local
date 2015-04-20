@@ -50,4 +50,4 @@ set ttymouse=xterm2
 " https://github.com/reedes/vim-textobj-quote
 autocmd FileType markdown call textobj#quote#init()
 
-nmap <Leader>x :make<CR><CR>
+nmap <Leader>x :make<CR>draw
