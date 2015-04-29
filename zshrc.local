@@ -7,6 +7,7 @@ export GPG_TTY
 export PATH="./bin:/usr/local/heroku/bin:$PATH"
 
 # Find and replace in project
+# Usage: `far search-string replace-string path`
 function far() {
   ack -l "$1" | xargs perl -pi -E "s/$1/$2/g"
 }
@@ -15,9 +16,9 @@ function far() {
 ulimit -n 4096
 
 # Node Version Manager
-export NVM_DIR="/Users/tute/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# pass Password Manager
+# pass Password Manager auto complete in mac
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 source /usr/local/etc/bash_completion.d/password-store
