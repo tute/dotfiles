@@ -2,6 +2,8 @@ set relativenumber
 
 color default
 
+let g:mustache_abbreviations = 1
+
 " keep 3 lines when scrolling
 set scrolloff=2
 
