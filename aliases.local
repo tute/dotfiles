@@ -1,19 +1,27 @@
+alias b="bundle"
 alias be='bundle exec'
 alias ding='afplay /System/Library/Sounds/Glass.aiff'
 alias g='git'
 alias gpg='gpg2'
 alias grbc='git rebase --continue'
 alias grep='grep --color --exclude="*/coverage/*" --exclude="*.git/*"'
+alias mkdir="mkdir -p"
 alias rst='touch tmp/restart.txt'
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ta='tmux attach -t'
 alias tl='tmux ls'
 alias tn='tmux new -s'
 
+alias fucknode="rm -rf node_modules && rm -rf bower_components"
+alias nodeplz="npm install && bower install"
+alias omgnode="fucknode && nodeplz"
+alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
+
 alias dk='cd ~/Sites/opensource/doorkeeper-gem/doorkeeper'
 alias dotfiles='cd ~/Sites/opensource/dotfiles'
 alias hs='cd ~/Sites/others/hoy-soy'
 alias merit='cd ~/Sites/opensource/merit'
+alias pc='cd ~/Sites/thoughtbot/paperclip'
 alias rr='cd ~/Sites/opensource/rails'
 alias sus='cd ~/Sites/opensource/suspenders/suspenders'
 alias talk='cd ~/Sites/opensource/refactoring-workshop'
