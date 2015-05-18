@@ -23,8 +23,6 @@
   email = tutecosta@gmail.com
 [heroku]
   account = work
-[rebase]
-  autosquash = true
 [hub]
   host = github.com
   host = github.groupondev.com

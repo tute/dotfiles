@@ -23,8 +23,18 @@ set pastetoggle=<f5>
 " Turn off spell by default. Too much technical jargon.
 set nospell
 
+" run rubocop
 let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop<CR>
+
+" escape insert mode quickly
+imap jj <Esc>
+
+" pry
+map <Leader>p Obinding.pry<Esc><CR>
+
+" make project
+nmap <Leader>x :make<CR>draw
 
 " Remove trailing white space on save
 autocmd BufWritePre * :%s/\s\+$//e
@@ -39,6 +49,9 @@ au BufReadPost *.hbs set syntax=mustache
 " vim-cdo
 set hidden
 
+" Highlight cursor line
+set cursorline
+
 " Send more characters for redraws
 set ttyfast
 
@@ -51,5 +64,3 @@ set ttymouse=xterm2
 
 " https://github.com/reedes/vim-textobj-quote
 autocmd FileType markdown call textobj#quote#init()
-
-nmap <Leader>x :make<CR>draw
