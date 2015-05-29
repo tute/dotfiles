@@ -7,6 +7,9 @@ let g:mustache_abbreviations = 1
 " keep 3 lines when scrolling
 set scrolloff=2
 
+" Allow to autocomplete hyphenated words
+set iskeyword+=-
+
 " Highlight search terms
 set hlsearch
 
