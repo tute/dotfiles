@@ -1,7 +1,7 @@
 alias b="bundle"
 alias be='bundle exec'
 alias ding='afplay /System/Library/Sounds/Glass.aiff'
-alias g='git'
+alias -g G="| grep"
 alias gpg='gpg2'
 alias grbc='git rebase --continue'
 alias grep='grep --color --exclude="*/coverage/*" --exclude="*.git/*"'
@@ -21,12 +21,14 @@ alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_
 alias dk='cd ~/Sites/opensource/doorkeeper-gem/doorkeeper'
 alias dotfiles='cd ~/Sites/opensource/dotfiles'
 alias hs='cd ~/Sites/others/hoy-soy'
+alias en='cd ~/Sites/opensource/encyclomap'
 alias merit='cd ~/Sites/opensource/merit'
 alias pc='cd ~/Sites/thoughtbot/paperclip'
 alias rr='cd ~/Sites/opensource/rails'
 alias ss='cd ~/Sites/opensource/sugarscape'
 alias sus='cd ~/Sites/opensource/suspenders/suspenders'
-alias talk='cd ~/Sites/opensource/refactoring-workshop'
+alias talk='cd ~/Sites/opensource/talks/welcoming-people'
+alias tute='cd ~/Sites/opensource/tute.github.io'
 
 # thoughtbot
 alias bots='cd ~/Sites/thoughtbot/robots.thoughtbot.com'

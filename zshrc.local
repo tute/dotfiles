@@ -12,13 +12,11 @@ function far() {
   ack -l "$1" | xargs perl -pi -E "s/$1/$2/g"
 }
 
+plugins=(brew pass)
+
 # Node whoes
 ulimit -n 4096
 
 # Node Version Manager
 export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# pass Password Manager auto complete in mac
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-source /usr/local/etc/bash_completion.d/password-store
