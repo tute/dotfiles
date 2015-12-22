@@ -1,5 +1,5 @@
-export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:$HOME/Library/Haskell/bin:$PATH
-eval "$(rbenv init -)"
+export PATH=$HOME/.bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init - --no-rehash zsh)"
 
 GPG_TTY=$(tty)
 export GPG_TTY
