@@ -14,9 +14,5 @@ function far() {
 
 plugins=(brew pass)
 
-# Node whoes
-ulimit -n 4096
-
-# Node Version Manager
-export NVM_DIR="~/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# Docker
+eval "$(docker-machine env default)"
