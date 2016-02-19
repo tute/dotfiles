@@ -21,6 +21,7 @@ alias nombom="npm cache clear && bower cache clean && rm -rf node_modules bower_
 alias dk="cd ~/Sites/opensource/doorkeeper-gem/doorkeeper"
 alias dotfiles="cd ~/Sites/opensource/dotfiles"
 alias en="cd ~/Sites/opensource/encyclomap"
+alias hs="cd ~/Documents/hoy-soy"
 alias merit="cd ~/Sites/opensource/merit"
 alias pc="cd ~/Sites/thoughtbot/paperclip"
 alias rr="cd ~/Sites/opensource/rails"
