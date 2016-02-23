@@ -34,6 +34,7 @@ alias tute="cd ~/Sites/opensource/tute.github.io"
 alias bots="cd ~/Sites/thoughtbot/robots.thoughtbot.com"
 alias book="cd ~/Sites/thoughtbot/maintaining-open-source-projects"
 alias coaching="cd ~/Sites/thoughtbot/coaching/coaching"
+alias qf="cd ~/Sites/thoughtbot/quicky-forecast"
 alias tb="cd ~/Sites/thoughtbot"
 alias upcase="cd ~/Sites/thoughtbot/upcase"
 
