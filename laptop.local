@@ -11,6 +11,7 @@ brew cask install iterm2
 brew cask install laullon-gitx
 brew cask install libreoffice
 brew cask install moom
+brew cask install screenhero
 brew cask install sketch
 brew cask install skype
 brew cask install slack
