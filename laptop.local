@@ -22,5 +22,6 @@ brew cask install vlc
 gem_install_or_update "bundler"
 gem_install_or_update "parity"
 
+brew_install_or_upgrade "tmate"
 brew_install_or_upgrade "phantomjs"
 brew_install_or_upgrade "tree"
