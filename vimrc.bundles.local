@@ -1,6 +1,7 @@
 Plug 'Peeja/vim-cdo'
 Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'elixir-lang/vim-elixir'
 Plug 'godlygeek/tabular'
 Plug 'kana/vim-textobj-user'
 Plug 'mustache/vim-mustache-handlebars'

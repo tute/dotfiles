@@ -7,6 +7,9 @@ let g:mustache_abbreviations = 1
 " keep 3 lines when scrolling
 set scrolloff=2
 
+" make test commands execute using dispatch.vim
+let test#strategy = "dispatch"
+
 " Allow to autocomplete hyphenated words
 set iskeyword+=-
 
@@ -33,8 +36,8 @@ nmap <Leader>r :RuboCop<CR>
 " escape insert mode quickly
 imap jj <Esc>
 
-" pry
-map <Leader>p Obinding.pry<Esc><CR>
+" paste clip board and set normal mode back
+map <Leader>p :set paste<CR><esc>"*]p:set nopaste<cr>
 
 " make project
 nmap <Leader>x :make<CR>draw
