@@ -19,6 +19,7 @@
 [pull]
   rebase = true
 [user]
+  name = Eugenio Guillermo Costa
   name = Tute Costa
   email = tutecosta@gmail.com
 [heroku]
