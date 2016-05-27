@@ -1,5 +1,6 @@
 brew_tap "caskroom/cask"
-brew_install_or_upgrade "brew-cask"
+brew_install_or_upgrade brew-cask
+brew_install_or_upgrade parity
 
 brew cask install 1password
 brew cask install cyberduck
@@ -20,9 +21,8 @@ brew cask install transmission
 brew cask install virtualbox
 brew cask install vlc
 
-gem_install_or_update "bundler"
-gem_install_or_update "parity"
+gem_install_or_update bundler
 
-brew_install_or_upgrade "tmate"
-brew_install_or_upgrade "phantomjs"
-brew_install_or_upgrade "tree"
+brew_install_or_upgrade tmate
+brew_install_or_upgrade phantomjs
+brew_install_or_upgrade tree
