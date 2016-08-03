@@ -27,6 +27,7 @@ alias merit="cd ~/Sites/opensource/merit"
 alias pc="cd ~/Sites/thoughtbot/paperclip/paperclip"
 alias rr="cd ~/Sites/opensource/rails"
 alias ss="cd ~/Sites/opensource/sugarscape"
+alias talk="cd ~/Sites/others/talks"
 alias sus="cd ~/Sites/opensource/suspenders/suspenders"
 alias tute="cd ~/Sites/opensource/tute.github.io"
 

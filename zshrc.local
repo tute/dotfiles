@@ -1,10 +1,8 @@
-export PATH=$HOME/.bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init - --no-rehash zsh)"
-
 GPG_TTY=$(tty)
 export GPG_TTY
 
 export PATH="./bin:/usr/local/heroku/bin:$PATH"
+export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
 # Find and replace in project
 # Usage: `far search-string replace-string path`
