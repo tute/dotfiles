@@ -22,6 +22,7 @@ alias nombom="npm cache clear && bower cache clean && rm -rf node_modules bower_
 alias dk="cd ~/Sites/opensource/doorkeeper-gem/doorkeeper"
 alias dotfiles="cd ~/Sites/opensource/dotfiles"
 alias en="cd ~/Sites/opensource/encyclomap"
+alias fanus="cd ~/Sites/others/fanus"
 alias hs="cd ~/Documents/hoy-soy"
 alias merit="cd ~/Sites/opensource/merit"
 alias pc="cd ~/Sites/thoughtbot/paperclip/paperclip"
@@ -36,6 +37,8 @@ alias book="cd ~/Sites/thoughtbot/maintaining-open-source-projects"
 alias hs="cd ~/Sites/thoughtbot/hotshot-legal"
 alias tb="cd ~/Sites/thoughtbot"
 alias upcase="cd ~/Sites/thoughtbot/upcase"
+
+alias pd="cd ~/Sites/thoughtbot/citrusbyte/prodeal360/prodeal360-phoenix"
 
 alias hi="cd ~/Sites/others/habitos.in"
 alias ph="cd ~/Sites/others/habitos.in/phoenix"
