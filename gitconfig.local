@@ -27,3 +27,5 @@
 [hub]
   host = github.com
   host = github.groupondev.com
+[rerere]
+  enabled = true
