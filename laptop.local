@@ -1,6 +1,9 @@
-brew_tap "caskroom/cask"
-brew_install_or_upgrade brew-cask
-brew_install_or_upgrade parity
+brew tap caskroom/cask
+
+brew install parity
+brew install phantomjs
+brew install tmate
+brew install tree
 
 brew cask install 1password
 brew cask install cyberduck
@@ -13,7 +16,7 @@ brew cask install laullon-gitx
 brew cask install libreoffice
 brew cask install moom
 brew cask install screenhero
-brew cask install size-up
+brew cask install sizeup
 brew cask install sketch
 brew cask install skim
 brew cask install skype
@@ -22,8 +25,4 @@ brew cask install transmission
 brew cask install virtualbox
 brew cask install vlc
 
-gem_install_or_update bundler
-
-brew_install_or_upgrade tmate
-brew_install_or_upgrade phantomjs
-brew_install_or_upgrade tree
+gem install bundler

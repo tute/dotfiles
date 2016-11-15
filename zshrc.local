@@ -12,5 +12,5 @@ function far() {
 
 plugins=(brew pass)
 
-# Docker
-eval "$(docker-machine env default)"
+export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init - --no-rehash)"
