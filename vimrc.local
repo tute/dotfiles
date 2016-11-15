@@ -2,6 +2,12 @@ set relativenumber
 
 color desert
 
+set complete-=i
+
+" Save anytime we leave a buffer or Vim loses focus
+autocmd BufLeave,FocusLost * silent! wall
+
+" http://stackoverflow.com/a/2460593/356060
 let g:mustache_abbreviations = 1
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
