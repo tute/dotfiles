@@ -21,6 +21,7 @@ brew cask install sketch
 brew cask install skim
 brew cask install skype
 brew cask install slack
+brew cask install sublime-text
 brew cask install transmission
 brew cask install virtualbox
 brew cask install vlc
