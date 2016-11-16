@@ -26,4 +26,7 @@ brew cask install transmission
 brew cask install virtualbox
 brew cask install vlc
 
+brew tap Goles/battery
+brew install battery
+
 gem install bundler
