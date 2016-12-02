@@ -1,5 +1,6 @@
 Plug 'Peeja/vim-cdo'
 Plug 'bling/vim-airline'
+Plug 'c-brenn/phoenix.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'elixir-lang/vim-elixir'
 Plug 'godlygeek/tabular'
