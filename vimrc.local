@@ -20,6 +20,16 @@ set wildmenu
 " debug in Elixir
 nnoremap <leader>pry oIO.inspect "------------"<c-m>require IEx<c-m>IEx.pry<c-m>IO.inspect "------------"<esc>
 
+" Open to linenumber
+function! OpenToLineNumber()
+  let filename=expand("%")
+  let parts=split(filename, ":")
+  exec ":e " . parts[0]
+  exec ":" . parts[1]
+  redraw!
+endfunction
+autocmd BufNewFile,BufEnter,BufRead *:* nested call OpenToLineNumber()
+
 " make test commands execute using dispatch.vim
 let test#strategy = "dispatch"
 
