@@ -26,6 +26,7 @@
   account = work
 [hub]
   host = github.com
-  host = github.groupondev.com
 [rerere]
   enabled = true
+[gpg]
+  program = /usr/local/MacGPG2/bin/gpg2
