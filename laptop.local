@@ -1,29 +1,17 @@
-brew tap caskroom/cask
-
-brew install parity
 brew install phantomjs
 brew install tmate
 brew install tree
 
-brew cask install 1password
-brew cask install cyberduck
-brew cask install dropbox
 brew cask install flux
 brew cask install google-chrome
-brew cask install gpgtools
-brew cask install iterm2
 brew cask install laullon-gitx
 brew cask install libreoffice
-brew cask install moom
 brew cask install screenhero
 brew cask install sizeup
-brew cask install sketch
 brew cask install skim
 brew cask install skype
 brew cask install slack
 brew cask install sublime-text
-brew cask install transmission
-brew cask install virtualbox
 brew cask install vlc
 
 brew tap Goles/battery
