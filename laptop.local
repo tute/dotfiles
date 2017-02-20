@@ -13,6 +13,7 @@ brew cask install skim
 brew cask install skype
 brew cask install slack
 brew cask install sublime-text
+brew cask install telegram
 brew cask install vlc
 
 brew tap Goles/battery
