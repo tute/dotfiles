@@ -6,7 +6,6 @@ brew install tree
 
 brew cask install flux
 brew cask install google-chrome
-brew cask install laullon-gitx
 brew cask install libreoffice
 brew cask install screenhero
 brew cask install sizeup
