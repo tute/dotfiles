@@ -8,7 +8,7 @@ brew cask install flux
 brew cask install google-chrome
 brew cask install libreoffice
 brew cask install screenhero
-brew cask install sizeup
+brew cask install shiftit
 brew cask install skim
 brew cask install skype
 brew cask install slack
