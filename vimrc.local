@@ -21,7 +21,7 @@ set path+=**
 set wildmenu
 
 " debug in Elixir
-nnoremap <leader>pry oIO.inspect "------------"<c-m>require IEx<c-m>IEx.pry<c-m>IO.inspect "------------"<esc>
+nnoremap <leader>pry orequire IEx<c-m>IEx.pry<esc>
 
 " Open to linenumber
 function! OpenToLineNumber()
