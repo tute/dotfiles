@@ -1,9 +1,11 @@
 brew install ack
+brew install graphviz
 brew install pass
 brew install phantomjs
 brew install pinentry-mac
 brew install tmate
 brew install tree
+brew install youtube-dl libav
 
 brew cask install flux
 brew cask install google-chrome
