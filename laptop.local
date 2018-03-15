@@ -10,7 +10,6 @@ brew install youtube-dl libav
 brew cask install flux
 brew cask install google-chrome
 brew cask install libreoffice
-brew cask install screenhero
 brew cask install shiftit
 brew cask install skim
 brew cask install skype
