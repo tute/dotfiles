@@ -13,4 +13,4 @@ function far() {
 plugins=(brew pass)
 
 export PATH="$HOME/.bin:$PATH"
-eval "$(rbenv init - --no-rehash)"
+source /Users/tute/.asdf/asdf.sh
