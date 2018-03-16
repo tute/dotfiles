@@ -18,7 +18,4 @@ brew cask install sublime-text
 brew cask install telegram
 brew cask install vlc
 
-brew tap Goles/battery
-brew install battery
-
 gem install bundler

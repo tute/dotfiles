@@ -28,7 +28,3 @@ bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iq v
 
 # Keep clear command
 bind C-l send-keys 'C-l'
-
-# Status info
-set-option -g status-left-length 50
-set-option -g status-right " #(battery -t) | #(date '+%a, %b %d - %I:%M') "
