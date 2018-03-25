@@ -2,12 +2,12 @@ set relativenumber
 
 color desert
 
+" https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593#2460593
 set complete-=i
 
 " Save anytime we leave a buffer or Vim loses focus
 autocmd BufLeave,FocusLost * silent! wall
 
-" http://stackoverflow.com/a/2460593/356060
 let g:mustache_abbreviations = 1
 
 " Default netrw To Tree Liststyle
