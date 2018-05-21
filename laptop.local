@@ -18,5 +18,3 @@ brew cask install sublime-text
 brew cask install telegram
 brew cask install transmission
 brew cask install vlc
-
-gem install bundler
