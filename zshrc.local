@@ -4,13 +4,8 @@ export GPG_TTY
 export PATH=".git/safe/../../bin:$PATH"
 export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
-# Find and replace in project
-# Usage: `far search-string replace-string path`
-function far() {
-  ack -l "$1" | xargs perl -pi -E "s/$1/$2/g"
-}
-
 plugins=(brew pass)
 
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 source /Users/tute/.asdf/asdf.sh
