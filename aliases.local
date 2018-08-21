@@ -8,8 +8,11 @@ alias grbc="git rebase --continue"
 alias grep="grep --color --exclude="*/coverage/*" --exclude="*.git/*""
 alias mkdir="mkdir -p"
 alias rst="touch tmp/restart.txt"
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias tl="tmux ls"
+
+if [[ ${uname} == "Darwin" ]] then
+  alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+fi
 
 alias mtt="mix test --trace"
 alias xtt="iex -S mix test --trace"

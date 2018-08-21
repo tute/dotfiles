@@ -6,6 +6,9 @@ export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
 plugins=(brew pass)
 
-export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+if [[ ${uname} == "Darwin" ]] then
+  export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+fi
+
 export PATH="$HOME/.bin:$PATH"
-source /Users/tute/.asdf/asdf.sh
+source $HOME/.asdf/asdf.sh

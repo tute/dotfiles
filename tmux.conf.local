@@ -1,6 +1,6 @@
 # macOS Sierra upgrade fix
-set -g default-shell $SHELL
-set -g default-command "reattach-to-user-namespace -l ${SHELL}"
+# set -g default-shell $SHELL
+# set -g default-command "reattach-to-user-namespace -l ${SHELL}"
 
 # Setup 'v' to begin selection as in Vim
 bind-key -Tcopy-mode-vi 'v' send -X begin-selection
