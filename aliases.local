@@ -8,6 +8,7 @@ alias grbc="git rebase --continue"
 alias grep="grep --color --exclude="*/coverage/*" --exclude="*.git/*""
 alias mkdir="mkdir -p"
 alias rst="touch tmp/restart.txt"
+alias sm="open -a Sublime\ Merge ."
 alias tl="tmux ls"
 
 if [[ ${uname} == "Darwin" ]] then
@@ -44,6 +45,3 @@ alias tb="cd ~/Sites/thoughtbot"
 alias upcase="cd ~/Sites/thoughtbot/upcase"
 
 alias eh="cd ~/Sites/epion/patient-check-in"
-
-alias hi="cd ~/Sites/others/habitos.in"
-alias ph="cd ~/Sites/others/habitos.in/phoenix"

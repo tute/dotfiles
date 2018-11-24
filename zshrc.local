@@ -12,3 +12,7 @@ fi
 
 export PATH="$HOME/.bin:$PATH"
 source $HOME/.asdf/asdf.sh
+
+MYSQL=/usr/local/mysql/bin
+export PATH=$PATH:$MYSQL
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH

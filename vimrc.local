@@ -103,3 +103,9 @@ set ttymouse=xterm2
 autocmd FileType markdown call textobj#quote#init()
 
 autocmd BufRead,BufNewFile *.es6 set filetype=javascript
+
+" https://github.com/vim-ruby/vim-ruby/issues/294#issuecomment-203648144
+let g:ruby_path = []
+
+let g:ag_working_path_mode="r"
+nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
