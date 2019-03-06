@@ -1,4 +1,5 @@
 Plug 'Peeja/vim-cdo'
+Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'c-brenn/phoenix.vim'
 Plug 'christoomey/vim-tmux-navigator'
