@@ -11,7 +11,9 @@ if [[ ${uname} == "Darwin" ]] then
 fi
 
 export PATH="$HOME/.bin:$PATH"
-source $HOME/.asdf/asdf.sh
+. $HOME/.asdf/asdf.sh
+# fpath=(/completions )
+# autoload -Uz compinit && compinit
 
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL

@@ -1,6 +1,5 @@
 alias b="bundle"
 alias be="bundle exec"
-alias ding="afplay /System/Library/Sounds/Glass.aiff"
 alias -g G="| grep"
 alias gpg="gpg2"
 alias grb="git rebase -i origin/master"
@@ -13,6 +12,9 @@ alias tl="tmux ls"
 
 if [[ ${uname} == "Darwin" ]] then
   alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+  alias ding="afplay /System/Library/Sounds/Glass.aiff"
+else
+  alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
 fi
 
 alias mtt="mix test --trace"
