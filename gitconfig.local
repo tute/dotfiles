@@ -7,7 +7,9 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
   st = status --short
+  wdiff = diff -w --word-diff=color
   wip = !git commit -am wip
+  wshow = show -w --word-diff=color
 [apply]
   whitespace = fix
 # [commit]

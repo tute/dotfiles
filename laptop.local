@@ -1,19 +1,14 @@
 brew install ack
-brew install graphviz
-brew install pass
-brew install phantomjs
-brew install pinentry-mac
+brew install ctags
+brew install git-gui
+brew install tldr
 brew install tmate
 brew install tree
-brew install youtube-dl libav
 
 brew cask install google-chrome
 brew cask install libreoffice
-brew cask install psequel
 brew cask install shiftit
-brew cask install skype
 brew cask install slack
 brew cask install sublime-text
-brew cask install telegram
 brew cask install transmission
 brew cask install vlc

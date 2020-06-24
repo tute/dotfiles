@@ -23,6 +23,8 @@ set wildmenu
 " debug in Elixir
 nnoremap <leader>pry orequire IEx<c-m>IEx.pry<esc>
 
+set rtp+=~/.fzf
+
 " Open to linenumber
 function! OpenToLineNumber()
   let filename=expand("%")

@@ -6,10 +6,7 @@ export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
 plugins=(brew pass)
 
-if [[ ${uname} == "Darwin" ]] then
-  export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
-fi
-
+export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 . $HOME/.asdf/asdf.sh
 # fpath=(/completions )
@@ -18,3 +15,5 @@ export PATH="$HOME/.bin:$PATH"
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES

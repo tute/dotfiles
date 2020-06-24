@@ -10,12 +10,9 @@ alias rst="touch tmp/restart.txt"
 alias sm="open -a Sublime\ Merge ."
 alias tl="tmux ls"
 
-if [[ ${uname} == "Darwin" ]] then
-  alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-  alias ding="afplay /System/Library/Sounds/Glass.aiff"
-else
-  alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
-fi
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias ding="afplay /System/Library/Sounds/Glass.aiff"
+# alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
 
 alias mtt="mix test --trace"
 alias xtt="iex -S mix test --trace"
@@ -30,7 +27,6 @@ alias nombom="npm cache clear && bower cache clean && rm -rf node_modules bower_
 
 alias dk="cd ~/Sites/opensource/doorkeeper-gem/doorkeeper"
 alias dotfiles="cd ~/Sites/opensource/dotfiles"
-alias en="cd ~/Sites/opensource/encyclomap"
 alias fanus="cd ~/Sites/fanus"
 alias merit="cd ~/Sites/opensource/merit"
 alias pc="cd ~/Sites/thoughtbot/paperclip"
