@@ -4,13 +4,12 @@ export GPG_TTY
 export PATH=".git/safe/../../bin:$PATH"
 export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
-plugins=(brew pass)
+. $(brew --prefix asdf)/asdf.sh
 
 export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
-. $HOME/.asdf/asdf.sh
-# fpath=(/completions )
-# autoload -Uz compinit && compinit
+
+ulimit -Sn 4096
 
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL

@@ -1,7 +1,26 @@
 {
-  "binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.ico", "*.pdf", "*.zip"],
-  "color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
-  "ensure_newline_at_eof_on_save": true,
-  "folder_exclude_patterns": [".git", "tmp"],
-  "trim_trailing_white_space_on_save": true
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.ico",
+		"*.pdf",
+		"*.zip"
+	],
+	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"tmp"
+	],
+	"font_size": 13,
+	"rulers":
+	[
+		120
+	],
+	"trim_trailing_white_space_on_save": true
 }

@@ -45,7 +45,7 @@ set iskeyword+=-
 set hlsearch
 
 " Highlight long lines
-set textwidth=80
+set textwidth=120
 set colorcolumn=+1
 
 " Resize splits when the window is resized
