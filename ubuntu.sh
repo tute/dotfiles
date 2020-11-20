@@ -31,10 +31,6 @@ CREATE ROLE tute superuser;
 CREATE USER tute;
 ALTER ROLE tute WITH LOGIN;
 
-# Qt5.5, capybara-webkit
-sudo apt install qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base \
-  gstreamer1.0-tools gstreamer1.0-x
-
 # Node, Yarn
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring

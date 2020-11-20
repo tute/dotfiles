@@ -6,7 +6,6 @@ export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
 . $(brew --prefix asdf)/asdf.sh
 
-export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 
 ulimit -Sn 4096
