@@ -4,8 +4,6 @@ export GPG_TTY
 export PATH=".git/safe/../../bin:$PATH"
 export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
-. $(brew --prefix asdf)/asdf.sh
-
 export PATH="$HOME/.bin:$PATH"
 
 ulimit -Sn 4096
@@ -15,3 +13,5 @@ export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+eval "$(fnm env)"
