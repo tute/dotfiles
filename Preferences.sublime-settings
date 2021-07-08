@@ -10,17 +10,24 @@
 		"*.pdf",
 		"*.zip"
 	],
-	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
+	"color_scheme": "auto",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
 		".git",
 		"tmp"
 	],
-	"font_size": 13,
+	"font_size": 14,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"rulers":
 	[
 		120
 	],
-	"trim_trailing_white_space_on_save": true
+	"theme": "auto",
+	"trim_trailing_white_space_on_save": true,
+	"dark_color_scheme": "Packages/JavaScriptNext - ES6 Syntax/Monokai Phoenix.tmTheme",
+	"light_color_scheme": "Packages/Color Scheme - Default/Celeste.sublime-color-scheme",
 }
