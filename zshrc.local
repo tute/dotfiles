@@ -14,4 +14,6 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+
 eval "$(fnm env)"
