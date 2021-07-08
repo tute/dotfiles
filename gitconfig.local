@@ -3,6 +3,7 @@
   ca = commit -a
   changelog = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --abbrev-commit --graph
   df = diff
+  dig = blame
   lg = log -p
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
