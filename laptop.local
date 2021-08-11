@@ -5,10 +5,11 @@ brew install tldr
 brew install tmate
 brew install tree
 
-brew cask install google-chrome
-brew cask install libreoffice
-brew cask install shiftit
-brew cask install slack
-brew cask install sublime-text
-brew cask install transmission
-brew cask install vlc
+brew install --cask aptible
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask slack
+brew install --cask sublime-text
+brew install --cask transmission
+brew install --cask tunnelbear
+brew install --cask vlc
