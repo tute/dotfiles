@@ -6,6 +6,8 @@ export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
 export PATH="$HOME/.bin:$PATH"
 
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 ulimit -Sn 4096
 
 MYSQL=/usr/local/mysql/bin
