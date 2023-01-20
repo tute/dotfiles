@@ -40,6 +40,6 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update && sudo apt install yarn
 
-# Apps to install manually: Slack, Sublime Text, Aptible Toolbelt, 1Password X
+# Apps to install manually: Slack, VS Code, 1Password X
 # Set Slack to open links in normal browser (about:profiles)
 # Facetime camera doesn't work; https://github.com/patjak/bcwc_pcie isn't stable

@@ -1,15 +1,23 @@
-brew install ack
-brew install ctags
+# https://github.com/thoughtbot/laptop
+# https://github.com/thoughtbot/dotfiles
+# https://github.com/tute/dotfiles
+
+# ssh-keygen -t ed25519
+
+# System settings
+#   Trackpad tap to click, increase speed
+#   Hide and show dock, position left
+#   Keyboard Shortcuts / App: Cmd-shift-M to Zoom ("Maximize" like double clicking on title bar)
+#   Turn off spelling autocorrections
+
 brew install git-gui
-brew install tldr
 brew install tmate
 brew install tree
 
-brew install --cask aptible
+brew install --cask 1password
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask slack
-brew install --cask sublime-text
 brew install --cask transmission
-brew install --cask tunnelbear
+brew install --cask visual-studio-code
 brew install --cask vlc
