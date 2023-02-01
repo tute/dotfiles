@@ -1,45 +1,16 @@
-alias b="bundle"
 alias be="bundle exec"
-alias -g G="| grep"
-alias gpg="gpg2"
-alias grb="git rebase -i origin/master"
+alias grb="git rebase -i origin/main"
 alias grbc="git rebase --continue"
+alias -g G="| grep"
 alias grep="grep --color --exclude="*/coverage/*" --exclude="*.git/*""
 alias mkdir="mkdir -p"
-alias rst="touch tmp/restart.txt"
-alias sm="open -a Sublime\ Merge ."
-alias tl="tmux ls"
 
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias ding="afplay /System/Library/Sounds/Glass.aiff"
 # alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
-
-alias mtt="mix test --trace"
-alias xtt="iex -S mix test --trace"
 
 # Removes trailing space
 # find . -name "*.rb" | xargs sed -i "" "s/[ ]*$//" "$@"
 
-alias fucknode="rm -rf node_modules && rm -rf bower_components"
-alias nodeplz="npm install && bower install"
-alias omgnode="fucknode && nodeplz"
-alias nombom="npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install"
-
-alias dk="cd ~/Sites/opensource/doorkeeper-gem/doorkeeper"
 alias dotfiles="cd ~/Sites/opensource/dotfiles"
 alias fanus="cd ~/Sites/fanus"
 alias merit="cd ~/Sites/opensource/merit"
-alias pc="cd ~/Sites/thoughtbot/paperclip"
-alias rr="cd ~/Sites/opensource/rails"
-alias ss="cd ~/Sites/opensource/sugarscape"
-alias talk="cd ~/Sites/others/talks"
-alias sus="cd ~/Sites/opensource/suspenders/suspenders"
-alias tute="cd ~/Sites/opensource/tute.github.io"
-
-alias bots="cd ~/Sites/thoughtbot/robots.thoughtbot.com"
-alias book="cd ~/Sites/thoughtbot/maintaining-open-source-projects"
-alias hs="cd ~/Sites/thoughtbot/hotshotlegal/rails"
-alias tb="cd ~/Sites/thoughtbot"
-alias upcase="cd ~/Sites/thoughtbot/upcase"
-
-alias eh="cd ~/Sites/epion/patient-check-in"
