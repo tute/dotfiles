@@ -45,7 +45,7 @@ set iskeyword+=-
 set hlsearch
 
 " Highlight long lines
-set textwidth=120
+set textwidth=80
 set colorcolumn=+1
 
 " Resize splits when the window is resized
@@ -99,7 +99,7 @@ set mouse=a
 
 " Set this to the name of your terminal that supports mouse codes.
 " Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
-set ttymouse=xterm2
+" set ttymouse=xterm2
 
 " https://github.com/reedes/vim-textobj-quote
 autocmd FileType markdown call textobj#quote#init()
