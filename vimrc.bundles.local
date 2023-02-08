@@ -12,6 +12,7 @@ Plug 'ngmy/vim-rubocop'
 Plug 'nicholaides/words-to-avoid.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'reedes/vim-textobj-quote'
 Plug 'skwp/greplace.vim'
 Plug 'terryma/vim-multiple-cursors'

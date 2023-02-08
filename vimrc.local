@@ -36,6 +36,9 @@ autocmd BufNewFile,BufEnter,BufRead *:* nested call OpenToLineNumber()
 " make test commands execute using dispatch.vim
 let test#strategy = "dispatch"
 
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+
 " Allow to autocomplete hyphenated words
 set iskeyword+=-
 
