@@ -1,5 +1,3 @@
-set relativenumber
-
 color desert
 
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593#2460593
