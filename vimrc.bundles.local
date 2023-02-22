@@ -16,7 +16,6 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 Plug 'reedes/vim-textobj-quote'
 Plug 'skwp/greplace.vim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-rake'
 Plug 'jparise/vim-graphql'
 Plug 'urso/haskell_syntax.vim'

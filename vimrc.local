@@ -33,11 +33,15 @@ function! OpenToLineNumber()
 endfunction
 autocmd BufNewFile,BufEnter,BufRead *:* nested call OpenToLineNumber()
 
-" make test commands execute using dispatch.vim
-let test#strategy = "dispatch"
-
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
+
+
+" vim-test configurations and mappings
+let test#javascript#jest#executable = 'yarn test'
+" Jest's -u, --updateSnapshot
+nnoremap <silent> <Leader>ut :TestFile -u<CR>
+nnoremap <silent> <Leader>us :TestNearest -u<CR>
 
 " Allow to autocomplete hyphenated words
 set iskeyword+=-
@@ -73,9 +77,6 @@ nmap <Leader>x :make<CR>draw
 
 " Remove trailing white space on save
 autocmd BufWritePre * :%s/\s\+$//e
-
-" let g:rspec_command = "Dispatch spring rspec {spec}"
-let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 
 let g:vim_markdown_folding_disabled=1
 
