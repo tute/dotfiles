@@ -1,4 +1,5 @@
-color desert
+color zellner
+color torte
 
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593#2460593
 set complete-=i
