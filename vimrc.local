@@ -37,7 +37,6 @@ autocmd BufNewFile,BufEnter,BufRead *:* nested call OpenToLineNumber()
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
-
 " vim-test configurations and mappings
 let test#javascript#jest#executable = 'yarn test'
 " Jest's -u, --updateSnapshot

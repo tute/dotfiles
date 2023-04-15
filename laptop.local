@@ -17,7 +17,15 @@ brew install tree
 brew install --cask 1password
 brew install --cask firefox
 brew install --cask google-chrome
+brew install --cask nvim
 brew install --cask slack
+brew install --cask tidal
 brew install --cask transmission
 brew install --cask visual-studio-code
 brew install --cask vlc
+
+# In `.config/nvim/init.vim`:
+#
+# set runtimepath^=~/.vim runtimepath+=~/.vim/after
+# let &packpath = &runtimepath
+# source ~/.vimrc
