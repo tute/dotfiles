@@ -12,7 +12,7 @@ alias ding="afplay /System/Library/Sounds/Glass.aiff"
 # Removes trailing space
 # find . -name "*.rb" | xargs sed -i "" "s/[ ]*$//" "$@"
 
-alias dotfiles="cd ~/Sites/opensource/dotfiles"
-alias fanus="cd ~/Sites/fanus"
-alias merit="cd ~/Sites/opensource/merit"
-alias in="cd ~/Sites/buoy/Infirmary"
+alias dotfiles="cd ~/Code/opensource/dotfiles"
+alias fanus="cd ~/Code/fanus"
+alias merit="cd ~/Code/opensource/merit"
+alias in="cd ~/Code/buoy/Infirmary"

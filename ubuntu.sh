@@ -7,9 +7,9 @@ sudo apt install git gitk silversearcher-ag vim ctags tmux tmate curl \
 
 # zsh, dotfiles
 chsh -s $(which zsh)
-git clone git@github.com:thoughtbot/dotfiles.git ~/Sites/opensource/tb-dotfiles
-git clone git@github.com:tute/dotfiles.git ~/Sites/opensource/dotfiles
-env RCRC=$HOME/Sites/opensource/dotfiles/rcrc rcup
+git clone git@github.com:thoughtbot/dotfiles.git ~/Code/opensource/tb-dotfiles
+git clone git@github.com:tute/dotfiles.git ~/Code/opensource/dotfiles
+env RCRC=$HOME/Code/opensource/dotfiles/rcrc rcup
 # Log out and log back in for some changes to take effect
 
 # asdf

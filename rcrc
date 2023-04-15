@@ -1,1 +1,1 @@
-DOTFILES_DIRS="$HOME/Sites/opensource/dotfiles $HOME/Sites/opensource/tb-dotfiles"
+DOTFILES_DIRS="$HOME/Code/opensource/dotfiles $HOME/Code/opensource/tb-dotfiles"
