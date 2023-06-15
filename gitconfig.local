@@ -19,6 +19,8 @@
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [help]
   autocorrect = 1
+[push]
+  autoSetupRemote = true
 [pull]
   rebase = true
 [user]
