@@ -1,9 +1,0 @@
-#!/bin/zsh
-
-if [[ $PWD =~ patient-check-in ]]; then
-  local number=$(git branch --show-current | tr -cd 0-9)
-
-  if [[ -n $number ]]; then
-    open "https://epion-health.atlassian.net/browse/ECI-$number"
-  fi
-fi

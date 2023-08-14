@@ -1,0 +1,25 @@
+#!/bin/zsh
+
+function b() {
+  local default_folder="$HOME/Code/Buoy"
+  local dirs=($default_folder/*(/))
+  local match_list=()
+  local target=$1
+
+  for dir in $dirs; do
+    if [[ "${dir:l}" == *"${target:l}"* ]]; then
+      match_list+=($dir)
+    fi
+  done
+
+  if [[ -z "$target" ]]; then
+    cd $default_folder
+  elif [[ "${#match_list[@]}" -eq 1 ]]; then
+    cd $match_list[1]
+  elif [[ "${#match_list[@]}" -gt 1 ]]; then
+    echo "Multiple matches found:"
+    print -l $match_list
+  else
+    echo "No matches found for '${target}'"
+  fi
+}
