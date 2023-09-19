@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+# BuoyRails
+tmux new-session -d -s BuoyRails -c ~/Developer/buoy/BuoyRails "bin/server"
+
+# Infirmary
+tmux new-session -d -s Infirmary -c ~/Developer/buoy/Infirmary "bin/server"
+
+# anchor_view_components
+ANCHOR="anchor_view_components"
+tmux new-session -d -s $ANCHOR -c ~/Developer/buoy/$ANCHOR "yarn build:css --watch"
+tmux new-window -t $ANCHOR:2 -c ~/Developer/buoy/$ANCHOR/demo "bin/dev"
+
+# Report
+echo "Attach to any session using 'tmux attach -t <session-name>'"
+echo "or 'tmux attach' to attach to the last session created.\n"
+
+tmux ls
