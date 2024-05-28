@@ -24,9 +24,9 @@
 [pull]
   rebase = true
 [user]
-  name = Eugenio Guillermo Costa
   name = Tute Costa
   email = tutecosta@gmail.com
+  signingKey = /Users/tute/.ssh/id_ed25519.pub
 [heroku]
   account = work
 [hub]
@@ -34,4 +34,4 @@
 [rerere]
   enabled = true
 [gpg]
-  program = /usr/local/bin/gpg2
+  format = ssh

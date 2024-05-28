@@ -18,6 +18,7 @@ brew install --cask 1password
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask nvim
+brew install --cask rectangle # Window management alike ShiftIt
 brew install --cask slack
 brew install --cask tidal
 brew install --cask transmission
