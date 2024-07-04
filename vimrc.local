@@ -1,5 +1,5 @@
-color torte
 color zellner
+color torte
 
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593#2460593
 set complete-=i
@@ -19,8 +19,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 set path+=**
 set wildmenu
 
-" debug in Elixir
-nnoremap <leader>pry orequire IEx<c-m>IEx.pry<esc>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 set rtp+=~/.fzf
 

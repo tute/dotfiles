@@ -1,25 +1,39 @@
 #!/bin/zsh
 
-function b() {
-  local default_folder="$HOME/Code/Buoy"
-  local dirs=($default_folder/*(/))
+action="cd"
+base_folder="$HOME/Code/Buoy"
+
+b() {
+  local directories=($base_folder/*(/))
   local match_list=()
   local target=$1
 
-  for dir in $dirs; do
-    if [[ "${dir:l}" == *"${target:l}"* ]]; then
+  for dir in $directories; do
+    local dir_base_name="${dir:t}"
+
+    if [[ "${dir_base_name:l}" == *"${target:l}"* ]]; then
       match_list+=($dir)
     fi
   done
 
   if [[ -z "$target" ]]; then
-    cd $default_folder
+    eval $action $base_folder
   elif [[ "${#match_list[@]}" -eq 1 ]]; then
-    cd $match_list[1]
+    eval $action $match_list[1]
   elif [[ "${#match_list[@]}" -gt 1 ]]; then
-    echo "Multiple matches found:"
-    print -l $match_list
+    if command -v fzf &> /dev/null; then
+      cd $(print -l $match_list | fzf)
+    else
+      echo "Multiple matches found:"
+      print -l $match_list
+    fi
   else
     echo "No matches found for '${target}'"
   fi
 }
+
+_b_completions() {
+  _files -W $base_folder
+}
+
+compdef _b_completions b=cd

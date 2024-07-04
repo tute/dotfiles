@@ -21,3 +21,5 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-rake'
 Plug 'jparise/vim-graphql'
 Plug 'urso/haskell_syntax.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
