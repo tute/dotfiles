@@ -27,11 +27,7 @@
   name = Tute Costa
   email = tutecosta@gmail.com
   signingKey = /Users/tute/.ssh/id_ed25519.pub
-[heroku]
-  account = work
-[hub]
-  host = github.com
 [rerere]
   enabled = true
-[gpg]
-  format = ssh
+[rebase]
+  autoStash = true
