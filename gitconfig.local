@@ -13,12 +13,10 @@
   wshow = show -w --word-diff=color
 [apply]
   whitespace = fix
-# [commit]
-#   gpgsign = true
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [help]
-  autocorrect = 1
+  autocorrect = 5
 [push]
   autoSetupRemote = true
 [pull]
