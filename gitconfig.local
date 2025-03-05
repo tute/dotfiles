@@ -29,3 +29,5 @@
   enabled = true
 [rebase]
   autoStash = true
+  pruneTags = true
+  all = true
