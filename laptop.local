@@ -11,6 +11,7 @@
 #   Turn off spelling autocorrections
 
 brew install git-gui
+brew install harper # https://writewithharper.com/docs/integrations/language-server
 brew install tmate
 brew install tree
 
@@ -23,7 +24,6 @@ brew install --cask slack
 brew install --cask tidal
 brew install --cask transmission
 brew install --cask visual-studio-code
-brew install --cask vlc
 
 # In `.config/nvim/init.vim`:
 #
