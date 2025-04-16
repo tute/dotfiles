@@ -12,7 +12,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 ulimit -Sn 4096
 
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+eval "$(mise activate zsh)"
 
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL

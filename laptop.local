@@ -12,6 +12,7 @@
 
 brew install git-gui
 brew install harper # https://writewithharper.com/docs/integrations/language-server
+brew install mise
 brew install tmate
 brew install tree
 
