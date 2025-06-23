@@ -1,0 +1,33 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+This project uses Ruby on Rails, PostgreSQL, Hotwire (Turbo and Stimulus), and our own design system called anchor_view_components (on top of Tailwind CSS).
+
+Code Style and Structure
+
+- Follow Rails conventions and best practices.
+- Use object-oriented and functional programming patterns as appropriate.
+- Don't add code comments repeating what the implementation does. Only add them
+  to explain the why, or some corner case that might be difficult to understand
+  for senior engineers
+- Follow our company's guides
+- When asked to create specs with non existent files, prompt me to ask you to create the file first, so then we fill the contents with the cursor rules activated by file name glob.
+
+Ruby and Rails Usage
+
+- Use Ruby 3.x features when appropriate (e.g., pattern matching, endless methods).
+- Leverage Rails' built-in helpers and methods.
+- Use ActiveRecord for database operations.
+
+Error Handling and Validation
+
+- Use ActiveModel validations in models.
+- Handle errors gracefully in controllers and display appropriate messages.
+
+Follow the company's and official guides:
+
+- @rails https://github.com/BuoySoftware/guides/tree/main/rails
+- @ruby https://github.com/BuoySoftware/guides/tree/main/ruby
+- @RubyOnRails https://guides.rubyonrails.org/
