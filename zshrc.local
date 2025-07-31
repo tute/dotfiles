@@ -4,20 +4,14 @@ export GPG_TTY
 source ~/.bin/b
 
 export PATH=".git/safe/../../bin:$PATH"
-export PATH="~/Applications/LibreOffice.app/Contents/MacOS:$PATH"
-
 export PATH="$HOME/.bin:$PATH"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-ulimit -Sn 4096
-
 eval "$(mise activate zsh)"
 
-MYSQL=/usr/local/mysql/bin
-export PATH=$PATH:$MYSQL
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+# MYSQL=/usr/local/mysql/bin
+# export PATH=$PATH:$MYSQL
+# export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
