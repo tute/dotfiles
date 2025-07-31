@@ -1,1 +1,2 @@
+EXCLUDES="*.md LICENSE CODEOWNERS linux.sh hushlogin railsrc"
 DOTFILES_DIRS="$HOME/Code/opensource/dotfiles $HOME/Code/opensource/tb-dotfiles"
