@@ -4,6 +4,7 @@ alias grbc="git rebase --continue"
 alias -g G="| grep"
 alias grep="grep --color --exclude="*/coverage/*" --exclude="*.git/*""
 alias mkdir="mkdir -p"
+alias n="cd ~/Code/Notes"
 alias sn="cd ~/Code/Notes/ && git pull && git wip && git push && cd -" # sync notes
 alias vim="nvim"
 
