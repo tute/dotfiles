@@ -8,7 +8,7 @@ alwaysApply: true
 - Don't use `let` or `before` blocks, use the setup/execute/expect phases, even if it results in repeated code. You may extract common setup into methods at the bottom of the spec file.
 - Don't stub the system under test
 - Try not to use doubles, stubs or mocks. If it gets too verbose or dependencies get complicated, suggest to refactor the class to be tested.
-- Don't use `when` in `context "when` (`when` is redundant)
+- Don't lead with the word `when` in context descriptions
 - Add contexts for the different variations/sections
 - Don't add code comments for the setup/execute/expect phases, just separate them with new lines
 - After generating the spec file, try to run it and fix the first round of errors
