@@ -28,5 +28,5 @@
   "window.confirmSaveUntitledWorkspace": false,
   "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.preferredLightColorTheme": "Quiet Light",
-  "terminal.integrated.defaultProfile.linux": "bash"
+  "terminal.integrated.defaultProfile.linux": "zsh"
 }
