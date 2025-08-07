@@ -9,22 +9,33 @@
 #   Hide and show dock, position left
 #   Keyboard Shortcuts / App: Cmd-shift-M to Zoom ("Maximize" like double clicking on title bar)
 #   Turn off spelling autocorrections
-
-brew install git-gui
-brew install harper # https://writewithharper.com/docs/integrations/language-server
-brew install mise
-brew install tmate
-brew install tree
+#   Sharing: Allow Remote Login (sshd)
 
 brew install --cask 1password
 brew install --cask firefox
-brew install --cask google-chrome
-brew install --cask nvim
-brew install --cask rectangle # Window management alike ShiftIt
+brew install --cask obsidian
 brew install --cask slack
 brew install --cask tidal
-brew install --cask transmission
-brew install --cask visual-studio-code
+
+brew install git
+brew install git-gui
+brew install mise
+brew install nvim
+brew install overmind
+brew install postgresql
+brew install rabbitmq
+brew install rcm
+brew install redis
+brew install the_silver_searcher
+brew install tmate
+brew install tmux
+brew install tree
+brew install vips
+brew install yarn
+
+brew services start postgresql
+brew services start rabbitmq
+brew services start redis
 
 # In `.config/nvim/init.vim`:
 #

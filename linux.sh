@@ -1,6 +1,7 @@
+# Go to Firefox Preferences: warn on closing multiple tab / vertical tabs to the left
+
 # CLI utilities
 yay -S install git silversearcher-ag vim ctags tmux curl rcm zsh
-# Go to Firefox Preferences: warn on closing multiple tab / vertical tabs to the left
 
 # zsh, dotfiles
 chsh -s $(which zsh)
