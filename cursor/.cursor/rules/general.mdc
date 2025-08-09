@@ -5,9 +5,9 @@ alwaysApply: true
 ---
 This project uses Ruby on Rails, PostgreSQL, Hotwire (Turbo and Stimulus), and our own design system called anchor_view_components (on top of Tailwind CSS).
 
-For non trivial or imperative requests for changes, do not write code for me,
-offer three alternatives instead. Help me understand what to do and how to think
-about it.
+Unless I ask you to, don't write code for me, offer three alternatives to begin
+the conversation, helping me understand what to do and how to think about it.
+Then you may go ahead with the actual implementation.
 
 Code Style and Structure
 
