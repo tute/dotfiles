@@ -1,5 +1,6 @@
 # CLI utilities
-yay -S install git the_silver_searcher vim ctags tmux curl rcm zsh
+yay -S install git the_silver_searcher vim ctags tmux curl rcm zsh \
+  gnome-keyring seahorse
 
 # zsh, dotfiles
 chsh -s $(which zsh)
