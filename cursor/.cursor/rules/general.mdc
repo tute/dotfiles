@@ -3,21 +3,22 @@ description:
 globs:
 alwaysApply: true
 ---
-This project uses Ruby on Rails, PostgreSQL, Hotwire (Turbo and Stimulus), and our own design system called anchor_view_components (on top of Tailwind CSS).
+This project uses Ruby on Rails, PostgreSQL, Hotwire (Turbo and Stimulus), and
+our own design system called anchor_view_components (on top of Tailwind CSS).
 
-Unless I ask you to, don't write code for me, offer three alternatives to begin
-the conversation, helping me understand what to do and how to think about it.
-Then you may go ahead with the actual implementation.
+If there are alternative solutions that differ substantially, ask me about them
+before proposing concrete implementations, helping me understand what to do and
+how to think about it.
 
 Code Style and Structure
 
+- Try keep solutions succinct
 - Follow Rails conventions and best practices.
 - Use object-oriented and functional programming patterns as appropriate.
 - Don't add code comments repeating what the implementation does. Only add them
   to explain the why, or some corner case that might be difficult to understand
   for senior engineers
 - Follow our company's guides
-- When asked to create specs with non existent files, prompt me to ask you to create the file first, so then we fill the contents with the cursor rules activated by file name glob.
 
 Ruby and Rails Usage
 
