@@ -15,7 +15,6 @@
   "git.openRepositoryInParentFolders": "always",
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.terminalLinksHandler": "github",
-  "rubocop.safeAutocorrect": false,
   "ruby.specSaveFile": true,
   "ruby.useLanguageServer": true,
   "search.mode": "reuseEditor",
