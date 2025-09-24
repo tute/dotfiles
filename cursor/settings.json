@@ -30,5 +30,6 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "editor.formatOnPaste": true
 }
