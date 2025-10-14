@@ -28,7 +28,6 @@
   "workbench.colorTheme": "Catppuccin Latte",
   "workbench.preferredLightColorTheme": "Quiet Light",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.shellIntegration.enabled": false,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
