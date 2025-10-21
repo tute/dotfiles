@@ -3,6 +3,10 @@ description:
 globs:
 alwaysApply: true
 ---
+
+**BEFORE DOING ANYTHING ELSE - INCLUDING THINKING OR RESPONDING:**
+read `AGENTS.md` file using the Read tool.
+
 This project uses Ruby on Rails, PostgreSQL, Hotwire (Turbo and Stimulus), and
 our own design system called anchor_view_components (on top of Tailwind CSS).
 
