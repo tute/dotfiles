@@ -25,7 +25,7 @@
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
   "window.confirmSaveUntitledWorkspace": false,
-  "workbench.colorTheme": "Catppuccin Latte",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Quiet Light",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "[json]": {
