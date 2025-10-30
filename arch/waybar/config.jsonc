@@ -8,15 +8,12 @@
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "group/tray-expander",
-    "hyprland/language",
-    "bluetooth",
     "network",
     "pulseaudio",
-    "cpu",
-    "battery"
+    "hyprland/language"
   ],
   "hyprland/language": {
-    "format": "{} ",
+    "format": " {}",
     "format-en": "🇺🇸",
     "format-en-intl": "🌐",
     "tooltip-format": "Keyboard Layout: {}"
@@ -59,12 +56,6 @@
     "signal": 7,
     "interval": 3600
   },
-
-  "cpu": {
-    "interval": 5,
-    "format": "󰍛",
-    "on-click": "$TERMINAL -e btop"
-  },
   "clock": {
     "format": "{:%a, %d %b %Y @ %H:%M}",
     "format-alt": "{:L%d %B W%V %Y}",
@@ -83,32 +74,6 @@
     "interval": 3,
     "spacing": 1,
     "on-click": "omarchy-launch-wifi"
-  },
-  "battery": {
-    "format": "{capacity}% {icon}",
-    "format-discharging": "{icon}",
-    "format-charging": "{icon}",
-    "format-plugged": "",
-    "format-icons": {
-      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-    },
-    "format-full": "󰂅",
-    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
-    "interval": 5,
-    "on-click": "omarchy-menu power",
-    "states": {
-      "warning": 20,
-      "critical": 10
-    }
-  },
-  "bluetooth": {
-    "format": "",
-    "format-disabled": "󰂲",
-    "format-connected": "",
-    "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "blueberry"
   },
   "pulseaudio": {
     "format": "{icon}",
