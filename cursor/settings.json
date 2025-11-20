@@ -25,11 +25,12 @@
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
   "window.confirmSaveUntitledWorkspace": false,
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Catppuccin Latte",
   "workbench.preferredLightColorTheme": "Quiet Light",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "cursor.composer.usageSummaryDisplay": "always"
 }
