@@ -1,0 +1,148 @@
+#!/usr/bin/env bash
+# inspired by https://gitrollup.com/r/install-cursor.sh
+set -euo pipefail
+
+# =========================
+# Cursor (Patched) Installer
+# =========================
+
+INSTALL_DIR="/opt"
+APP_DIR_NAME="Cursor-patched"
+FINAL_APP_PATH="$INSTALL_DIR/$APP_DIR_NAME"
+EXECUTABLE_SYMLINK="/usr/local/bin/cursor"
+
+ICON_NAME="cursor-ai.png"
+ICON_PATH="/usr/share/icons/hicolor/512x512/apps/$ICON_NAME"
+ICON_URL="https://img.icons8.com/nolan/512/cursor-ai.png"
+
+DESKTOP_ENTRY_NAME="cursor-patched.desktop"
+DESKTOP_ENTRY_PATH="/usr/share/applications/$DESKTOP_ENTRY_NAME"
+
+ARCH_DEFAULT="$(uname -m)"
+case "$ARCH_DEFAULT" in
+  x86_64) ARCH="x64" ;;
+  aarch64|arm64) ARCH="arm64" ;;
+  *) ARCH="x64" ;;
+esac
+ARCH="${ARCH:-x64}"
+
+PATCH_MARKETPLACE="${PATCH_MARKETPLACE:-0}"
+
+DOWNLOAD_PAGE="https://cursor.com/download"
+UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36"
+TEMP_DOWNLOAD_DIR="$(mktemp -d)"
+APPIMAGE_PATH="$TEMP_DOWNLOAD_DIR/Cursor.AppImage"
+
+cleanup() { rm -rf "$TEMP_DOWNLOAD_DIR" >/dev/null 2>&1 || true; }
+trap cleanup EXIT
+
+require_root() {
+  if [ "${EUID:-$(id -u)}" -ne 0 ]; then
+    echo "Please run this script as root (e.g., sudo)." >&2
+    exit 1
+  fi
+}
+
+ensure_deps() {
+  echo "--> Ensuring dependencies..." >&2
+  if command -v apt-get >/dev/null 2>&1; then
+    apt-get update -y >/dev/null 2>&1 || true
+    apt-get install -y curl wget libfuse2 gtk-update-icon-cache >/dev/null 2>&1 || true
+  fi
+  command -v curl >/dev/null || { echo "curl is required" >&2; exit 1; }
+  command -v wget >/dev/null || { echo "wget is required" >&2; exit 1; }
+}
+
+resolve_cursor_appimage() {
+  local arch="${1:-x64}"
+  local html url file ver
+
+  echo "--> Fetching $DOWNLOAD_PAGE ..." >&2
+  html="$(curl -fSsSL -A "$UA" --max-time 25 "$DOWNLOAD_PAGE")"
+
+  # url="$(printf "%s" "$html" \
+  #   | grep -oE "https://downloads\.cursor\.com/[^\"']+/linux/${arch}/[^\"']+\.AppImage" \
+  #   | head -n1 || true)"
+  url="https://api2.cursor.sh/updates/download/golden/linux-x64/cursor/2.1"
+
+  if [ -z "$url" ]; then
+    echo "Error: could not locate a Linux/${arch} AppImage link." >&2
+    exit 1
+  fi
+
+  file="$(basename "$url")"
+  ver="$(printf "%s" "$file" | grep -oE '(?<=Cursor-)[0-9]+(\.[0-9]+){1,3}([-_a-zA-Z0-9]+)?' || true)"
+
+  echo "--> Found AppImage:" >&2
+  echo "    URL: $url" >&2
+  [ -n "$ver" ] && echo "    Version: $ver" >&2 || echo "    Version: (unparsed)" >&2
+
+  # stdout → just the URL
+  printf '%s\n' "$url"
+}
+
+download_appimage() {
+  local url="$1"
+  echo "--> Downloading AppImage..." >&2
+  curl -fL -A "$UA" "$url" -o "$APPIMAGE_PATH"
+  chmod +x "$APPIMAGE_PATH"
+}
+
+extract_appimage() {
+  echo "--> Extracting AppImage to $FINAL_APP_PATH ..." >&2
+  rm -rf "$FINAL_APP_PATH"
+  ( cd "$TEMP_DOWNLOAD_DIR" && "$APPIMAGE_PATH" --appimage-extract )
+  mv "$TEMP_DOWNLOAD_DIR/squashfs-root" "$FINAL_APP_PATH"
+}
+
+maybe_patch_marketplace() {
+  local product_json
+  product_json="$(find "$FINAL_APP_PATH" -type f -path '*/resources/app/product.json' | head -n1 || true)"
+  if [ -z "$product_json" ]; then
+    echo "    product.json not found. Skipping marketplace patch." >&2
+    return
+  fi
+  if [ "$PATCH_MARKETPLACE" = "1" ]; then
+    echo "--> Applying legacy VS Code marketplace patch..." >&2
+    sed -i 's|"serviceUrl": "https://marketplace.cursorapi.com/_apis/public/gallery"|"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery"|g' "$product_json"
+    sed -i 's|"itemUrl": "https://marketplace.cursorapi.com/items"|"itemUrl": "https://marketplace.visualstudio.com/items"|g' "$product_json"
+    sed -i 's|"resourceUrlTemplate": "https://marketplace.cursorapi.com/{publisher}/{name}/{version}/{path}"|"resourceUrlTemplate": "https://{publisher}.vscode-unpkg.net/{publisher}/{name}/{version}/{path}"|g' "$product_json"
+  else
+    echo "    Skipping marketplace patch (PATCH_MARKETPLACE=0)." >&2
+  fi
+}
+
+install_icon_and_launcher() {
+  echo "--> Installing icon and launcher..." >&2
+  mkdir -p "$(dirname "$ICON_PATH")"
+  wget -q -O "$ICON_PATH" "$ICON_URL" || true
+  gtk-update-icon-cache /usr/share/icons/hicolor >/dev/null 2>&1 || true
+
+  ln -sf "$FINAL_APP_PATH/AppRun" "$EXECUTABLE_SYMLINK"
+
+  cat > "$DESKTOP_ENTRY_PATH" <<EOL
+[Desktop Entry]
+Name=Cursor (Patched)
+Comment=The AI-first Code Editor
+Icon=$ICON_NAME
+StartupWMClass=Cursor
+Exec=$EXECUTABLE_SYMLINK %U
+Type=Application
+Categories=Development;IDE;
+Terminal=false
+EOL
+}
+
+main() {
+  require_root
+  ensure_deps
+  echo "--> Target architecture: ${ARCH}" >&2
+  url="$(resolve_cursor_appimage "$ARCH")"
+  download_appimage "$url"
+  extract_appimage
+  maybe_patch_marketplace
+  install_icon_and_launcher
+  echo "✅ Installation complete. Run 'cursor' or find it in your app menu." >&2
+}
+
+main "$@"
