@@ -110,4 +110,4 @@ autocmd BufRead,BufNewFile *.es6 set filetype=javascript
 let g:ruby_path = []
 
 let g:ag_working_path_mode="r"
-nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap K :Rg "\b<C-R><C-W>\b"<CR>:cw<CR>

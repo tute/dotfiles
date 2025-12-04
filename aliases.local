@@ -1,5 +1,4 @@
 alias be="bundle exec"
-alias grb="git rebase -i origin/main"
 alias grbc="git rebase --continue"
 alias -g G="| grep"
 alias grep="grep --color --exclude="*/coverage/*" --exclude="*.git/*""
@@ -11,10 +10,3 @@ alias ding="afplay /System/Library/Sounds/Glass.aiff"
 
 # Removes trailing space
 # find . -name "*.rb" | xargs sed -i "" "s/[ ]*$//" "$@"
-
-alias dotfiles="cd ~/Code/opensource/dotfiles"
-alias fanus="cd ~/Code/fanus"
-alias merit="cd ~/Code/opensource/merit"
-alias by="cd ~/Code/buoy/BuoyRails"
-alias ie="cd ~/Code/buoy/InfirmaryEngine"
-alias in="cd ~/Code/buoy/Infirmary"

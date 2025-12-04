@@ -1,8 +1,6 @@
 GPG_TTY=$(tty)
 export GPG_TTY
 
-source ~/.bin/b
-
 export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="$HOME/.bin:$HOME/.local/bin:$PATH"
 export PATH=".git/safe/../../bin:$PATH"
