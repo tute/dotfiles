@@ -5,8 +5,11 @@ alias grep="grep --color --exclude="*/coverage/*" --exclude="*.git/*""
 alias mkdir="mkdir -p"
 alias vim="nvim"
 
-alias ding="afplay /System/Library/Sounds/Glass.aiff"
-# alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
+if [[ "$OSTYPE" == darwin* ]]; then
+  alias ding="afplay /System/Library/Sounds/Glass.aiff"
+else
+  alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
+fi
 
 # Removes trailing space
 # find . -name "*.rb" | xargs sed -i "" "s/[ ]*$//" "$@"
