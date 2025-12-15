@@ -11,5 +11,7 @@ else
   alias ding="paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
 fi
 
+alias medu="cd ~/Code/ai/medu-relier/"
+
 # Removes trailing space
 # find . -name "*.rb" | xargs sed -i "" "s/[ ]*$//" "$@"
