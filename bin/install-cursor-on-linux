@@ -63,7 +63,7 @@ resolve_cursor_appimage() {
   # url="$(printf "%s" "$html" \
   #   | grep -oE "https://downloads\.cursor\.com/[^\"']+/linux/${arch}/[^\"']+\.AppImage" \
   #   | head -n1 || true)"
-  url="https://api2.cursor.sh/updates/download/golden/linux-x64/cursor/2.1"
+  url="https://api2.cursor.sh/updates/download/golden/linux-x64/cursor/2.3"
 
   if [ -z "$url" ]; then
     echo "Error: could not locate a Linux/${arch} AppImage link." >&2
