@@ -24,3 +24,6 @@ bindings = [
 [terminal.shell]
 program = "/bin/zsh"
 args = ["-l"]
+
+[terminal]
+osc52 = "CopyPaste"
