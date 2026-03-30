@@ -17,3 +17,4 @@ source ~/.vimrc
 - Link config rules
   - omarchy: `ln -s ~/Code/opensource/dotfiles/arch/hypr ~/.config/hypr`
   - apps: `ln -s ~/Code/opensource/dotfiles/cursor/.cursor .cursor`
+- omarchy-theme-install https://github.com/Nirmal314/omarchy-van-gogh-theme
