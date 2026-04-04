@@ -1,3 +1,4 @@
+alias ag="rg"
 alias be="bundle exec"
 alias grbc="git rebase --continue"
 alias -g G="| grep"
