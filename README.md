@@ -7,6 +7,7 @@ Using [RCM](http://thoughtbot.github.io/rcm/rcm.7.html).
 - `ssh-keygen -t ed25519` and allow in GitHub
 - Clone dotfiles repos down to `~/Code/opensource`
 - Run `rcup`
+- Run `./macos-defaults.sh` (macOS system preferences & animations)
 - In `~/.config/nvim/init.vim`:
 ```
 set runtimepath^=~/.vim runtimepath+=~/.vim/after

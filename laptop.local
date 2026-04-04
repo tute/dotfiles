@@ -3,12 +3,10 @@
 
 # ssh-keygen -t ed25519
 
-# System settings
-#   Trackpad tap to click, increase speed
-#   Hide and show dock, position left
+# System settings (automated in macos-defaults.sh)
+# Manual steps:
 #   Keyboard Shortcuts / App: Cmd-shift-M to Zoom (to maximize like double clicking on title bar)
 #   Keyboard Modifiers: Caps -> Ctrl
-#   Turn off spelling autocorrections
 #   Sharing: Allow Remote Login (sshd)
 
 brew install --cask 1password
