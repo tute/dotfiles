@@ -4,8 +4,11 @@ alias grbc="git rebase --continue"
 alias -g G="| grep"
 alias grep="grep --color --exclude="*/coverage/*" --exclude="*.git/*""
 alias mkdir="mkdir -p"
-alias open="xdg-open"
 alias vim="nvim"
+
+if command -v xdg-open >/dev/null 2>&1; then
+  alias open="xdg-open"
+fi
 
 if [[ "$OSTYPE" == darwin* ]]; then
   alias ding="afplay /System/Library/Sounds/Glass.aiff"
