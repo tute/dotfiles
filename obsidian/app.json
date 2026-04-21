@@ -1,1 +1,9 @@
-{}
+{
+  "textFont": "JetBrainsMono Nerd Font",
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "en",
+    "es"
+  ],
+  "livePreview": true
+}

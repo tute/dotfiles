@@ -19,5 +19,6 @@ source ~/.vimrc
   - omarchy: `ln -s ~/Code/opensource/dotfiles/arch/hypr ~/.config/hypr`
   - apps: `ln -s ~/Code/opensource/dotfiles/cursor/.cursor .cursor`
   - Obsidian (quit Obsidian first): `ln -s ~/Code/opensource/dotfiles/obsidian ~/Code/Notes/.obsidian`
-    - After first launch, in Settings > Core plugins > Remotely Save, re-enter credentials (`plugins/remotely-save/data.json` is gitignored because it contains secrets).
+    - Install plugin binaries (not tracked in git): `bash ~/Code/opensource/dotfiles/obsidian/install-plugins.sh`
+    - After first launch, re-enter Remotely Save credentials (`plugins/remotely-save/data.json` is gitignored).
 - omarchy-theme-install https://github.com/Nirmal314/omarchy-van-gogh-theme

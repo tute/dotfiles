@@ -1,2 +1,5 @@
 workspace*.json
 plugins/remotely-save/data.json
+
+plugins/*/main.js
+plugins/*/styles.css
