@@ -18,4 +18,6 @@ source ~/.vimrc
 - Link config rules
   - omarchy: `ln -s ~/Code/opensource/dotfiles/arch/hypr ~/.config/hypr`
   - apps: `ln -s ~/Code/opensource/dotfiles/cursor/.cursor .cursor`
+  - Obsidian (quit Obsidian first): `ln -s ~/Code/opensource/dotfiles/obsidian ~/Code/Notes/.obsidian`
+    - After first launch, in Settings > Core plugins > Remotely Save, re-enter credentials (`plugins/remotely-save/data.json` is gitignored because it contains secrets).
 - omarchy-theme-install https://github.com/Nirmal314/omarchy-van-gogh-theme
