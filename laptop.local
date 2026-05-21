@@ -14,6 +14,7 @@ brew install --cask cursor
 brew install --cask firefox
 brew install --cask simplenote
 brew install --cask slack
+brew install --cask superwhisper
 brew install --cask tidal
 brew install --cask tuple
 

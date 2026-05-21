@@ -18,6 +18,7 @@ ALTER ROLE tute WITH LOGIN;
 
 # Apps to install manually: Slack, Cursor
 # Set Slack to open links in normal browser (about:profiles)
+# Superwhisper: macOS-only, no Linux equivalent in this setup yet
 
 # Setup ethernet 1000mbps:
 # sudo ip link set eno1 down
