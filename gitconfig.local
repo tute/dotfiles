@@ -38,6 +38,7 @@
 [rerere]
   enabled = true
 [rebase]
+  all = true
   autoStash = true
   pruneTags = true
-  all = true
+  updateRefs = true

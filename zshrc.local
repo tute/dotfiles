@@ -17,5 +17,5 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 
 if [[ "$OSTYPE" == darwin* ]]; then
-  export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+  export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
 fi
