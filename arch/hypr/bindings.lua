@@ -1,29 +1,21 @@
--- Keep only your personal keybinding overrides here. Add new bindings or
--- unbind defaults before replacing them.
+-- Google Calendar instead of HEY Calendar
+hl.unbind("SUPER + SHIFT + C")
+o.bind("SUPER + SHIFT + C", "Calendar", { webapp = "https://calendar.google.com" })
 
--- See current bindings and descriptions:
---   omarchy menu keybindings --print
+-- Slack instead of Google Maps
+hl.unbind("SUPER + SHIFT + S")
+o.bind("SUPER + SHIFT + S", "Slack", { launch = "slack" })
 
--- To disable every Omarchy default binding, set this in
--- ~/.config/hypr/hyprland.lua before require("default.hypr.omarchy"), then add
--- only the bindings you want below:
---   omarchy_default_bindings = false
+-- Tidal instead of Spotify
+hl.unbind("SUPER + SHIFT + M")
+o.bind("SUPER + SHIFT + M", "Tidal", { webapp = "https://tidal.com/" })
 
--- To disable all preinstalled app/webapp bindings, set:
---   omarchy_preinstalled_bindings = false
+o.bind("SUPER + SHIFT + PERIOD", "1Password", { omarchy = "1password" })
 
--- Add a new binding.
--- o.bind("SUPER + SHIFT + R", "SSH", "alacritty -e ssh your-server")
+-- Vim-style focus movement
+o.bind("SUPER + SHIFT + H", "Focus left", hl.dsp.focus({ direction = "l" }))
+o.bind("SUPER + SHIFT + J", "Focus down", hl.dsp.focus({ direction = "d" }))
+o.bind("SUPER + SHIFT + K", "Focus up", hl.dsp.focus({ direction = "u" }))
+o.bind("SUPER + SHIFT + L", "Focus right", hl.dsp.focus({ direction = "r" }))
 
--- Change an existing binding by unbinding it first, then binding the key again.
--- This example changes SUPER+SPACE from the launcher to the Omarchy root menu.
--- hl.unbind("SUPER + SPACE")
--- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu toggle root")
-
--- Disable a default binding without replacing it.
--- hl.unbind("SUPER + SHIFT + B")
-
--- Logitech MX Keys examples:
--- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
--- o.bind("SUPER + H", nil, "voxtype record toggle")
--- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
+o.bind("CTRL + ALT + K", nil, "hyprctl switchxkblayout -- keychron-keychron-k2-version-3 next")
