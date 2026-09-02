@@ -1,6 +1,6 @@
--- Google Calendar instead of HEY Calendar
+-- renCal instead of HEY Calendar
 hl.unbind("SUPER + SHIFT + C")
-o.bind("SUPER + SHIFT + C", "Calendar", { webapp = "https://calendar.google.com" })
+o.bind("SUPER + SHIFT + C", "Calendar", { launch = "rencal" })
 
 -- Slack instead of Google Maps
 hl.unbind("SUPER + SHIFT + S")
