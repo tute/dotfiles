@@ -20,6 +20,7 @@ brew install --cask tuple
 
 brew install git
 brew install git-gui
+brew install herdr
 brew install mise && mise settings add idiomatic_version_file_enable_tools ruby
 brew install nvim
 brew install overmind

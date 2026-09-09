@@ -2,6 +2,9 @@
 yay -S install git the_silver_searcher vim ctags tmux curl rcm zsh \
   gnome-keyring seahorse
 
+# Herdr: official binary (AUR/Omarchy can lag; machine add needs 0.9+)
+curl -fsSL https://herdr.dev/install.sh | sh
+
 # zsh, dotfiles
 chsh -s $(which zsh)
 git clone git@github.com:thoughtbot/dotfiles.git ~/Code/opensource/tb-dotfiles
