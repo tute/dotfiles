@@ -1,0 +1,18 @@
+#!/bin/bash
+# Bar module for Omarchy shell (bar.layout, type "command"). Prints a globe
+# for the intl (dead-key) variant and a US flag for the base us layout, since
+# both share the same xkb language brief and read identically as "EN".
+
+keymap=$(hyprctl devices -j | jq -r '
+  [.keyboards[] | select(.name | test("^(hl-virtual-keyboard|power-button|sleep-button|lid-switch|video-bus)") | not)]
+  | first
+  | .active_keymap // empty
+')
+
+if [[ "$keymap" == *intl* ]]; then
+  icon="🌐"
+else
+  icon="🇺🇸"
+fi
+
+jq -nc --arg text "$icon" --arg tooltip "$keymap" '{text: $text, tooltip: $tooltip}'

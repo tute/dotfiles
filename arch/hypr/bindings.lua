@@ -18,4 +18,4 @@ o.bind("SUPER + SHIFT + J", "Focus down", hl.dsp.focus({ direction = "d" }))
 o.bind("SUPER + SHIFT + K", "Focus up", hl.dsp.focus({ direction = "u" }))
 o.bind("SUPER + SHIFT + L", "Focus right", hl.dsp.focus({ direction = "r" }))
 
-o.bind("CTRL + ALT + K", nil, "hyprctl switchxkblayout -- keychron-keychron-k2-version-3 next")
+o.bind("CTRL + ALT + K", nil, "hyprctl switchxkblayout all next")

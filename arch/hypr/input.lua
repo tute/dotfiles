@@ -17,3 +17,10 @@ hl.device({
   kb_variant = ",intl",
   kb_options = "caps:ctrl_modifier",
 })
+
+hl.device({
+  name = "tute’s-magic-keyboard",
+  kb_layout = "us,us",
+  kb_variant = ",intl",
+  kb_options = "caps:ctrl_modifier",
+})
