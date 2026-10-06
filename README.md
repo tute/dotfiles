@@ -17,6 +17,10 @@ source ~/.vimrc
 - Firefox Preferences: Vertical tabs to the left
 - Link config rules
   - omarchy: `ln -s ~/Code/opensource/dotfiles/arch/hypr ~/.config/hypr`
+  - omarchy bar: `ln -sf ~/Code/opensource/dotfiles/arch/omarchy/shell.json ~/.config/omarchy/shell.json`
+  - calendar (after the installs in `linux.sh`):
+    - `ln -sf ~/Code/opensource/dotfiles/arch/caldir/config.toml ~/.config/caldir/config.toml`
+    - `ln -sf ~/Code/opensource/dotfiles/arch/rencal/config.toml ~/.config/rencal/config.toml`
   - apps: `ln -s ~/Code/opensource/dotfiles/cursor/.cursor .cursor`
   - Obsidian (quit Obsidian first): `ln -s ~/Code/opensource/dotfiles/obsidian ~/Code/Notes/.obsidian`
     - Install plugin binaries (not tracked in git): `bash ~/Code/opensource/dotfiles/obsidian/install-plugins.sh`

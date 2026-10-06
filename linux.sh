@@ -5,6 +5,12 @@ yay -S install git the_silver_searcher vim ctags tmux curl rcm zsh \
 # Herdr: official binary (AUR/Omarchy can lag; machine add needs 0.9+)
 curl -fsSL https://herdr.dev/install.sh | sh
 
+# Calendar: caldir (sync CLI), renCal (GUI), caldir bar widget
+curl -sSf https://caldir.org/install.sh | sh
+yay -S rencal-bin
+omarchy plugin add https://github.com/t4t5/omarchy-caldir-widget --enable
+caldir connect google
+
 # zsh, dotfiles
 chsh -s $(which zsh)
 git clone git@github.com:thoughtbot/dotfiles.git ~/Code/opensource/tb-dotfiles

@@ -1,0 +1,3 @@
+calendar_dir = "~/caldir"
+time_format = "24h"
+default_calendar = "viaje"

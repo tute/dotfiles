@@ -1,0 +1,7 @@
+theme = "omarchy"
+notifications_enabled = true
+auto_sync_enabled = true
+first_day_of_week = "monday"
+show_week_numbers = false
+
+[groups]
