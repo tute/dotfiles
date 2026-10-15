@@ -3,6 +3,7 @@ alias be="bundle exec"
 alias grbc="git rebase --continue"
 alias -g G="| grep"
 alias grep="grep --color --exclude="*/coverage/*" --exclude="*.git/*""
+alias md='touch "$(date +%F).md"'
 alias mkdir="mkdir -p"
 alias vim="nvim"
 
