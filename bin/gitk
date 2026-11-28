@@ -1,0 +1,29 @@
+#!/bin/sh
+set -e
+
+dir="${XDG_CONFIG_HOME:-$HOME/.config}/git"
+config="$dir/gitk"
+
+if [ "$(uname)" = Darwin ]; then
+  if defaults read -g AppleInterfaceStyle 2>/dev/null | grep -q Dark; then mode=dark; else mode=light; fi
+else
+  if [ -e "$HOME/.config/omarchy/current/theme/light.mode" ]; then mode=light; else mode=dark; fi
+fi
+
+theme="$dir/gitk-$mode.tcl"
+if [ -f "$theme" ]; then
+  [ -f "$config" ] || : > "$config"
+  tmp="$config.tmp"
+  awk 'NR == FNR { keys[$2] = 1; next } !($1 == "set" && $2 in keys)' "$theme" "$config" > "$tmp"
+  cat "$theme" >> "$tmp"
+  mv "$tmp" "$config"
+fi
+
+IFS=:
+for d in $PATH; do
+  if [ -x "$d/gitk" ] && ! [ "$d/gitk" -ef "$0" ]; then
+    exec "$d/gitk" "$@"
+  fi
+done
+echo "gitk: real gitk not found in PATH" >&2
+exit 1
